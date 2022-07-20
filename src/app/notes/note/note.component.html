@@ -1,0 +1,18 @@
+<h3>Add Note</h3>
+<hr />
+<form (ngSubmit)="addNote()">
+  <input type="text" placeholder="Id" name="id" [(ngModel)]="note.id" />
+  <input
+    type="text"
+    placeholder="Value"
+    name="value"
+    [(ngModel)]="note.value"
+  />
+  <input
+    type="date"
+    placeholder="Date"
+    name="date"
+    [(ngModel)]="note.createdAt"
+  />
+  <button type="submit">Add</button>
+</form>

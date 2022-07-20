@@ -1,0 +1,7 @@
+<h3>List</h3>
+<hr />
+<ul *ngFor="let note of notes">
+  <li>
+    {{ note.id }} - {{ note.value }} - {{ note.createdAt | date: "dd/MM/yyyy" }}
+  </li>
+</ul>
