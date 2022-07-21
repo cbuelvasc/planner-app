@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+
+  planner-app:
+    container_name: planner-app
+    build: .
+    ports:
+        - "8080:80"
